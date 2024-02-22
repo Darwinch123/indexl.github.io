@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Kierrez Zer My Mobia ♥</title>
+  <style>
+    .body {
+
+
+
+      align-items: center;
+      min-height: 100vh;
+      background: url(bg.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+
+    }
+    .a{
+      width: 20%;
+  height: 71px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">Vamos hacer llamada hoy mi amooor lindaaaaaaaaaaa, hermosa y que yo mando  </h1>
+  <img src="a.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button class="a" id="yes">Chiiii  vamos hacer llamada, y tu mandas </button>
+  <button class="a" id="no">no mandas</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('yo mando mi amooor');
+      alert('Y vamos hacer llamada chiiiiii');
+      location.href = 'https://wa.link/uchhj2';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
